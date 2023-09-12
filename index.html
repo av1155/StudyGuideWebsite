@@ -7,12 +7,30 @@
     <style>
       /* Apply styles based on the style guide */
       body {
-        font-family: Helvetica;
+        font-family: Helvetica, Arial, sans-serif;
         font-size: 16px;
         padding: 0;
         margin: 0;
         color: #333333; /* Default text color */
         background-color: #f5f5f5;
+      }
+
+      /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px; /* Adjust font size for smaller screens */
+        }
+
+        .container {
+          padding: 15px; /* Reduce padding for smaller screens */
+        }
+
+        /* Modify other styles as needed for smaller screens */
+
+        /* Smaller image size for mobile */
+        .image-styling {
+          max-width: 150px; /* Adjust the width for mobile */
+        }
       }
 
       h1 {
@@ -61,8 +79,8 @@
       /* Style the container */
       .image-container {
         display: flex;
+        flex-direction: column; /* Stack content vertically */
         align-items: center;
-        justify-content: space-between;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -72,9 +90,9 @@
 
       /* Style the image */
       .image-styling {
-        max-width: 225px; /* Adjust the width as needed */
+        max-width: 300px; /* Adjust the width for computers */
         height: auto;
-        margin-left: 20px; /* Adjust the margin for spacing */
+        margin: 10px 0; /* Add spacing above and below the image */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
       }
 
@@ -134,153 +152,148 @@
       <!-- History Section -->
       <section id="history">
         <h1>History</h1>
-        <ol>
+
+        <h2>Six Approaches to Psychology:</h2>
+        <ul>
           <li>
-            <h2>Six Approaches to Psychology:</h2>
-            <ul>
-              <li>
-                <b>Psychoanalytic:</b> Focuses on the unconscious mind, dreams,
-                and inner conflicts as determinants of behavior and mental
-                processes.
-              </li>
-              <li>
-                <b>Behavioral:</b> Examines observable behaviors and how they
-                are influenced by stimuli and responses in the environment.
-              </li>
-              <li>
-                <b>Gestalt:</b> Studies how people perceive and interpret the
-                world as a whole, emphasizing patterns and context.
-              </li>
-              <li>
-                <b>Humanistic:</b> Emphasizes personal growth,
-                self-actualization, and the inherent goodness of individuals.
-              </li>
-              <li>
-                <b>Cognitive:</b> Investigates mental processes such as
-                thinking, memory, and problem-solving.
-              </li>
-              <li>
-                <b>Biological:</b> Explores the biological basis of behavior,
-                including genetics, brain structure, and neurotransmitters.
-              </li>
-            </ul>
+            <b>Psychoanalytic:</b> Focuses on the unconscious mind, dreams, and
+            inner conflicts as determinants of behavior and mental processes.
           </li>
           <li>
-            <h2>Scientific Approach:</h2>
-            <p>
-              Psychology uses a scientific approach to study behavior and mental
-              processes. Key differences:
-            </p>
-            <ul>
-              <li>
-                <b>True Experiment:</b> Manipulates variables to establish
-                causation.
-              </li>
-              <li>
-                <b>Correlational Approach:</b> Examines relationships between
-                variables without manipulation.
-              </li>
-            </ul>
+            <b>Behavioral:</b> Examines observable behaviors and how they are
+            influenced by stimuli and responses in the environment.
           </li>
           <li>
-            <h2>Key Figures in Psychology:</h2>
-            <ul>
-              <li>
-                <b>William James:</b> Pioneer of functionalism, focusing on how
-                mental processes function in adapting to the environment.
-              </li>
-              <li>
-                <b>Wilhelm Wundt:</b> Founder of structuralism, the study of the
-                basic elements of consciousness.
-              </li>
-              <li>
-                <b>Charles Darwin:</b> Influential in psychology for his ideas
-                on natural selection and individual differences.
-              </li>
-              <li>
-                <b>Sir Francis Galton:</b> Contributed to the study of
-                individual differences. Cousin of Darwin.
-              </li>
-              <li>
-                <b>John Watson:</b> Known for behaviorism, emphasizing
-                observable behaviors.
-              </li>
-              <li>
-                <b>Titchener:</b> Prominent in structuralism, studying the
-                structure of consciousness.
-              </li>
-            </ul>
+            <b>Gestalt:</b> Studies how people perceive and interpret the world
+            as a whole, emphasizing patterns and context.
           </li>
           <li>
-            <h2>Introspection:</h2>
-            <p>
-              A method where individuals reflect and report on their own
-              thoughts, feelings, and sensations.
-            </p>
+            <b>Humanistic:</b> Emphasizes personal growth, self-actualization,
+            and the inherent goodness of individuals.
           </li>
           <li>
-            <h2>Testable Hypothesis:</h2>
-            <p>
-              A hypothesis in science should be disconfirmable or falsifiable,
-              meaning it can be tested to either support or refute it. Avoid
-              offering explanations after observing results.
-            </p>
+            <b>Cognitive:</b> Investigates mental processes such as thinking,
+            memory, and problem-solving.
           </li>
           <li>
-            <h2>Random Assignment:</h2>
-            <p>
-              In true experiments, subjects are randomly assigned to groups to
-              control for extraneous variables, ensuring that differences in the
-              dependent variable are due to the independent variable.
-            </p>
+            <b>Biological:</b> Explores the biological basis of behavior,
+            including genetics, brain structure, and neurotransmitters.
           </li>
-          <li>
-            <h2>Random Sampling:</h2>
-            <p>
-              In research, a random selection of subjects helps create a sample
-              that represents the larger population, allowing for the
-              generalization of findings.
-            </p>
-          </li>
-          <li>
-            <h2>True Experiments vs. Correlational Studies:</h2>
-            <p>
-              True experiments involve manipulation to establish causation,
-              while correlational studies examine relationships without
-              manipulation.
-            </p>
-          </li>
-          <li>
-            <h2>Fields of Specialization:</h2>
-            <p>
-              Study various fields within psychology as outlined in the
-              textbook.
-            </p>
-          </li>
-          <li>
-            <h2>Charles Darwin and Psychology:</h2>
-            <p>
-              Darwin's theory of natural selection highlighted the role of
-              individual differences, which later led to the study of individual
-              differences in psychology.
-            </p>
-          </li>
-          <li>
-            <h2>Ethics of Research:</h2>
-            <p>
-              Considerations include the Institutional Review Board (IRB),
-              informed consent, minimizing harm, privacy, and debriefing of
-              participants.
-            </p>
-          </li>
-        </ol>
+        </ul>
+
+        
+          <h2>Scientific Approach:</h2>
+          <p>
+            Psychology uses a scientific approach to study behavior and mental
+            processes. Key differences:
+          </p>
+          <ul>
+            <li>
+              <b>True Experiment:</b> Manipulates variables to establish
+              causation.
+            </li>
+            <li>
+              <b>Correlational Approach:</b> Examines relationships between
+              variables without manipulation.
+            </li>
+          </ul>
+        </li>
+        
+          <h2>Key Figures in Psychology:</h2>
+          <ul>
+            <li>
+              <b>William James:</b> Pioneer of functionalism, focusing on how
+              mental processes function in adapting to the environment.
+            </li>
+            <li>
+              <b>Wilhelm Wundt:</b> Founder of structuralism, the study of the
+              basic elements of consciousness.
+            </li>
+            <li>
+              <b>Charles Darwin:</b> Influential in psychology for his ideas on
+              natural selection and individual differences.
+            </li>
+            <li>
+              <b>Sir Francis Galton:</b> Contributed to the study of individual
+              differences. Cousin of Darwin.
+            </li>
+            <li>
+              <b>John Watson:</b> Known for behaviorism, emphasizing observable
+              behaviors.
+            </li>
+            <li>
+              <b>Titchener:</b> Prominent in structuralism, studying the
+              structure of consciousness.
+            </li>
+          </ul>
+        </li>
+        
+          <h2>Introspection:</h2>
+          <p>
+            A method where individuals reflect and report on their own thoughts,
+            feelings, and sensations.
+          </p>
+        
+        
+          <h2>Testable Hypothesis:</h2>
+          <p>
+            A hypothesis in science should be disconfirmable or falsifiable,
+            meaning it can be tested to either support or refute it. Avoid
+            offering explanations after observing results.
+          </p>
+        
+        
+          <h2>Random Assignment:</h2>
+          <p>
+            In true experiments, subjects are randomly assigned to groups to
+            control for extraneous variables, ensuring that differences in the
+            dependent variable are due to the independent variable.
+          </p>
+        
+        
+          <h2>Random Sampling:</h2>
+          <p>
+            In research, a random selection of subjects helps create a sample
+            that represents the larger population, allowing for the
+            generalization of findings.
+          </p>
+        
+        
+          <h2>True Experiments vs. Correlational Studies:</h2>
+          <p>
+            True experiments involve manipulation to establish causation, while
+            correlational studies examine relationships without manipulation.
+          </p>
+        
+        
+          <h2>Fields of Specialization:</h2>
+          <p>
+            Study various fields within psychology as outlined in the textbook.
+          </p>
+        
+        
+          <h2>Charles Darwin and Psychology:</h2>
+          <p>
+            Darwin's theory of natural selection highlighted the role of
+            individual differences, which later led to the study of individual
+            differences in psychology.
+          </p>
+        
+      
+          <h2>Ethics of Research:</h2>
+          <p>
+            Considerations include the Institutional Review Board (IRB),
+            informed consent, minimizing harm, privacy, and debriefing of
+            participants.
+          </p>
+        
       </section>
 
       <!-- Statistics and Methods Section -->
       <section id="statistics">
         <h1>Statistics and Methods</h1>
-        <ol>
-          <li>
+        
+          
             <h2>Area Under the Normal Curve:</h2>
             <p>
               The phrase "Area Under the Normal Curve" means understanding the
@@ -292,52 +305,52 @@
               interpreting data and making statistical inferences in the context
               of a normal distribution.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Dependent and Independent Variables:</h2>
             <p>
               The dependent variable is what you measure, and the independent
               variable is what you manipulate in an experiment.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Descriptive vs. Inferential Statistics:</h2>
             <p>
               Descriptive statistics summarize data, while inferential
               statistics draw conclusions or make predictions based on data.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Measures of Central Tendency and Spread:</h2>
             <p>
               Central tendency includes mean, median, and mode. Spread involves
               range, standard deviation, and variance.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Manipulating a Variable:</h2>
             <p>
               To manipulate a variable means intentionally changing it to
               observe its effect on the dependent variable.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Standard Deviation:</h2>
             <p>
               A measure of the spread or variability of data points in a
               dataset. It indicates how much individual data points differ from
               the mean.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Correlation:</h2>
             <p>
               It has magnitude (strength) and direction (positive or negative).
               A correlation of 0 means no relationship, while -0.95 is a strong
               negative correlation.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Z-Score:</h2>
             <div class="image-container">
               <p style="line-height: 1.5">
@@ -359,8 +372,8 @@
                 class="image-styling"
               />
             </div>
-          </li>
-          <li>
+          
+          
             <h2>Third Variable Problem and Directionality Problem:</h2>
             <p>
               These are issues in correlational studies that can make it tricky
@@ -386,8 +399,8 @@
               These problems remind us that correlation doesn't always mean
               causation.
             </p>
-          </li>
-          <li>
+          
+          
             <h2>Research Methods:</h2>
             <ul>
               <li>
@@ -428,45 +441,45 @@
                 sickness by giving it to one group and not the other.
               </li>
             </ul>
-          </li>
-        </ol>
+          
+        
       </section>
 
       <!-- Brain and Behavior Section -->
       <section id="brain">
         <h1>Brain and Behavior</h1>
-        <ul>
-          <li>
+        
+        
             <h2>Nervous System:</h2>
             <p>
               Know the overall organization, including the central nervous
               system (brain and spinal cord) and peripheral nervous system
               (sensory and motor neurons).
             </p>
-          </li>
-          <li>
+          
+        
             <h2>Neuron:</h2>
             <p>
               Understand its components, including dendrites (receive signals),
               soma (cell body), axon (transmits signals), terminal buttons
               (release neurotransmitters), and myelin sheath (insulation).
             </p>
-          </li>
-          <li>
+          
+        
             <h2>Neurotransmitters and Synapse:</h2>
             <p>
               Neurotransmitters transmit signals across synapses, the gaps
               between neurons.
             </p>
-          </li>
-          <li>
+          
+        
             <h2>Cerebellum and Corpus Callosum:</h2>
             <p>
               The cerebellum coordinates motor skills, and the corpus callosum
               connects the brain's hemispheres.
             </p>
-          </li>
-          <li>
+          
+        
             <h2>Lobes of the Cerebral Cortex:</h2>
             <ul style="line-height: 1.5">
               <li>
@@ -487,10 +500,7 @@
                 and objects.
               </li>
             </ul>
-          </li>
-          <br />
-          <br />
-
+ 
           <div class="image-container">
             <p style="line-height: 1.5">
               <b>Broca's and Wernicke's Areas:</b>
@@ -523,14 +533,14 @@
               class="image-styling"
             />
           </div>
-          <li>
+        
             <h2>Brain Plasticity:</h2>
             <p>
               The brain's ability to reorganize and adapt, especially after
               injury.
             </p>
           </li>
-          <li>
+        
             <h2>Left and Right Hemispheres:</h2>
             <ul style="line-height: 1.5">
               <li>
@@ -544,27 +554,27 @@
               </li>
             </ul>
           </li>
-          <li>
+        
             <h2>Roger Sperry's Split-Brain Research:</h2>
             <p>
               Studied patients with split brains to treat epilepsy, revealing
               the specialization of each hemisphere.
             </p>
           </li>
-          <li>
+        
             <h2>Visual Agnosia and Prosopagnosia:</h2>
             <p>
               Visual agnosia is the inability to recognize objects, while
               prosopagnosia is the inability to recognize faces.
             </p>
-          </li>
-        </ul>
+          
+        
       </section>
 
       <!-- Perception Section -->
       <section id="perception">
         <h1>Perception</h1>
-        <ul>
+        
           <div class="image-container">
             <p style="line-height: 1.5">
               <b>Illusory Contours:</b> Perceiving contours where none exist.
@@ -679,31 +689,31 @@
             />
           </div>
 
-          <li>
+        
             <h2>Top-Down vs. Bottom-Up Processing:</h2>
             <p>
               Top-down involves using prior knowledge, while bottom-up starts
               with raw sensory input.
             </p>
-          </li>
+          
 
-          <li>
+        
             <h2>Ames Room Illusion:</h2>
             <p>
               An optical illusion where objects appear distorted due to the
               room's design.
             </p>
-          </li>
+          
 
-          <li>
+        
             <h2>Perceptual Constancies:</h2>
             <p>
               Understanding that objects maintain their characteristics (size,
               color, shape) even when viewed from different angles or lighting
               conditions.
             </p>
-          </li>
-        </ul>
+          
+        
       </section>
     </div>
 
